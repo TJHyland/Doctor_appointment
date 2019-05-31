@@ -1,0 +1,9 @@
+<%= @user.id ? "Edit User" : "New User" %>
+
+<%= form_for @user do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true%>
+
+  <%= f.submit %>
+<% end %>
