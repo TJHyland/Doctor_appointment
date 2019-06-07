@@ -33,7 +33,7 @@ class DoctorsController < ApplicationController
   end
 
   def update
-    if @doctor.update(doctors_params)
+    if @doctor.update(doctor_params)
       redirect_to doctors_path
     else
       render :edit
